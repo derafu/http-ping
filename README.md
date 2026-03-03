@@ -164,3 +164,9 @@ This project is intentionally over-structured for what it does ("a tank for a fl
 - **CI** (`.github/workflows/ci.yml`) — runs lint and tests on every push across multiple Python versions.
 - **Docs** (`docs/`, `.github/workflows/docs.yml`, `.readthedocs.yaml`) — Sphinx with autodoc, deployed automatically to GitHub Pages and Read the Docs.
 - **Packaging** (`pyproject.toml`, `Makefile`) — `make lambda` builds the deployable AWS Lambda zip; `make dist` / `make upload` build and publish to PyPI. These targets are kept as reference even though this project is not published.
+
+## Links
+
+- [Python package on PyPI](https://pypi.org/project/http-ping/)
+- [Documentation on GitHub Pages](https://http-ping.docs.derafu.dev/)
+- [Documentation on Read the Docs](https://http-ping.readthedocs.io/)
