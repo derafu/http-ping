@@ -1,0 +1,14 @@
+.venv/
+.python-version
+**/__pycache__/
+
+*.egg-info/
+build/
+dist/
+var/
+.coverage
+htmlcov/
+
+http-ping-function.zip
+/function/*
+!/function/lambda_function.py
