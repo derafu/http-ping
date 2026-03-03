@@ -1,0 +1,231 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API Reference &mdash; http-ping 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="http-ping" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            http-ping
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#http_ping.HttpRequest"><code class="docutils literal notranslate"><span class="pre">HttpRequest</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#http_ping.HttpRequest.auth"><code class="docutils literal notranslate"><span class="pre">HttpRequest.auth</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#http_ping.HttpRequest.body"><code class="docutils literal notranslate"><span class="pre">HttpRequest.body</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#http_ping.HttpRequest.headers"><code class="docutils literal notranslate"><span class="pre">HttpRequest.headers</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#http_ping.HttpRequest.method"><code class="docutils literal notranslate"><span class="pre">HttpRequest.method</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#http_ping.HttpRequest.timeout"><code class="docutils literal notranslate"><span class="pre">HttpRequest.timeout</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#http_ping.HttpRequest.url"><code class="docutils literal notranslate"><span class="pre">HttpRequest.url</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#http_ping.HttpAuth"><code class="docutils literal notranslate"><span class="pre">HttpAuth</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#http_ping.HttpAuth.basic"><code class="docutils literal notranslate"><span class="pre">HttpAuth.basic()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#http_ping.HttpAuth.bearer"><code class="docutils literal notranslate"><span class="pre">HttpAuth.bearer()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#http_ping.HttpAuth.token"><code class="docutils literal notranslate"><span class="pre">HttpAuth.token()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#http_ping.HttpPing"><code class="docutils literal notranslate"><span class="pre">HttpPing</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#http_ping.HttpPing.run"><code class="docutils literal notranslate"><span class="pre">HttpPing.run()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#http_ping.HttpPingBatch"><code class="docutils literal notranslate"><span class="pre">HttpPingBatch</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#http_ping.HttpPingBatch.run"><code class="docutils literal notranslate"><span class="pre">HttpPingBatch.run()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">http-ping</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">API Reference</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/api.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="api-reference">
+<h1>API Reference<a class="headerlink" href="#api-reference" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="http_ping.HttpRequest">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">http_ping.</span></span><span class="sig-name descname"><span class="pre">HttpRequest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'GET'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict[str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">str]</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">30.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auth</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/http_ping/ping.html#HttpRequest"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#http_ping.HttpRequest" title="Link to this definition"></a></dt>
+<dd><p>Configuration for an HTTP request.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="http_ping.HttpRequest.auth">
+<span class="sig-name descname"><span class="pre">auth</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></span><a class="headerlink" href="#http_ping.HttpRequest.auth" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="http_ping.HttpRequest.body">
+<span class="sig-name descname"><span class="pre">body</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Any</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></span><a class="headerlink" href="#http_ping.HttpRequest.body" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="http_ping.HttpRequest.headers">
+<span class="sig-name descname"><span class="pre">headers</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#http_ping.HttpRequest.headers" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="http_ping.HttpRequest.method">
+<span class="sig-name descname"><span class="pre">method</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'GET'</span></span><a class="headerlink" href="#http_ping.HttpRequest.method" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="http_ping.HttpRequest.timeout">
+<span class="sig-name descname"><span class="pre">timeout</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">30.0</span></span><a class="headerlink" href="#http_ping.HttpRequest.timeout" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="http_ping.HttpRequest.url">
+<span class="sig-name descname"><span class="pre">url</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#http_ping.HttpRequest.url" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="http_ping.HttpAuth">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">http_ping.</span></span><span class="sig-name descname"><span class="pre">HttpAuth</span></span><a class="reference internal" href="_modules/http_ping/ping.html#HttpAuth"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#http_ping.HttpAuth" title="Link to this definition"></a></dt>
+<dd><p>Helpers to build common Authorization header values.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="http_ping.HttpAuth.basic">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">basic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">username</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/http_ping/ping.html#HttpAuth.basic"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#http_ping.HttpAuth.basic" title="Link to this definition"></a></dt>
+<dd><p>Return an Authorization header value using the Basic scheme.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="http_ping.HttpAuth.bearer">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">bearer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/http_ping/ping.html#HttpAuth.bearer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#http_ping.HttpAuth.bearer" title="Link to this definition"></a></dt>
+<dd><p>Return an Authorization header value using the Bearer scheme.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="http_ping.HttpAuth.token">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">token</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/http_ping/ping.html#HttpAuth.token"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#http_ping.HttpAuth.token" title="Link to this definition"></a></dt>
+<dd><p>Return an Authorization header value using the Token scheme.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="http_ping.HttpPing">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">http_ping.</span></span><span class="sig-name descname"><span class="pre">HttpPing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#http_ping.HttpRequest" title="http_ping.ping.HttpRequest"><span class="pre">HttpRequest</span></a></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">retries</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backoff</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/http_ping/ping.html#HttpPing"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#http_ping.HttpPing" title="Link to this definition"></a></dt>
+<dd><p>Executes an HttpRequest and returns status code, body and elapsed time.</p>
+<p>Retries automatically on network errors and 5xx responses.
+Backoff between retries doubles each time: backoff, backoff*2, backoff*4, …</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="http_ping.HttpPing.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/http_ping/ping.html#HttpPing.run"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#http_ping.HttpPing.run" title="Link to this definition"></a></dt>
+<dd><p>Execute the request with retry logic.</p>
+<dl class="simple">
+<dt>Returns a dict with:</dt><dd><ul class="simple">
+<li><p>status_code:     int</p></li>
+<li><p>body:            parsed JSON if possible, else str</p></li>
+<li><p>elapsed_seconds: float (last attempt only)</p></li>
+<li><p>attempts:        int</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="http_ping.HttpPingBatch">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">http_ping.</span></span><span class="sig-name descname"><span class="pre">HttpPingBatch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">http_requests</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#http_ping.HttpRequest" title="http_ping.ping.HttpRequest"><span class="pre">HttpRequest</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">retries</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backoff</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/http_ping/ping.html#HttpPingBatch"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#http_ping.HttpPingBatch" title="Link to this definition"></a></dt>
+<dd><p>Executes a list of HttpRequests sequentially and returns a result per URL.</p>
+<p>Uses the same retries and backoff for every request. If a request fails
+after all retries, its result includes an “error” key instead of
+“status_code”/”body”/”elapsed_seconds”. Execution continues with the
+remaining URLs regardless of individual failures.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="http_ping.HttpPingBatch.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/http_ping/ping.html#HttpPingBatch.run"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#http_ping.HttpPingBatch.run" title="Link to this definition"></a></dt>
+<dd><p>Execute all requests and return one result dict per URL.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="http-ping" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright .</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
